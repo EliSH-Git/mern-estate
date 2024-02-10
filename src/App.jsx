@@ -5,16 +5,18 @@ import SignIn from './pages/SignIn.jsx'
 import  SignUp  from './pages/SignUp.jsx'
 import   About  from './pages/About.jsx'
 import   Profile  from './pages/Profile.jsx'
+import Header from './components/Header.jsx'
 
 
 function App() {
   return (
     <div>
      <BrowserRouter>
+     <Header />
       <Routes>
         <Route path="/" element={<Home />}/>
-        <Route path="/signIn" element={<SignIn /> }/>
-        <Route path="/signUp" element={<SignUp />}/>
+        <Route path="/sign-in" element={<SignIn /> }/>
+        <Route path="/sign-up" element={<SignUp />}/>
         <Route path="/about" element={<About />}/>
         <Route path="/profile" element={<Profile />}/>
       </Routes>
