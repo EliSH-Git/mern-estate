@@ -1,9 +1,23 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import 'dotenv/config';
+import userRouter from './routes/user.route.js'; 
 
 const app = express();
 app.use(express.json()); // for parsing application/json
+
+app.use('/api/user', userRouter)
+
+
+
+
+
+
+
+
+
+
+
 
 mongoose.connect(process.env.MONGO_URI).then(() => {
   console.log('MongoDB connected');
