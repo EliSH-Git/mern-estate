@@ -6,7 +6,7 @@
 - npm i -g nodemon
 npm i express => npm run dev für runnig server
 - npm i body-parser
-- npm i bcrypt
+ npm i bcryptjs
 - npm i cors
 npm i dotenv
 - npm i gridfs-stream
