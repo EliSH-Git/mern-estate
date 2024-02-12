@@ -14,7 +14,7 @@ npm i dotenv
 - npm i multer-gridfs-storage
 - npm i helmet
 - npm i morgan
-- npm i jsonwebtoken
+npm i jsonwebtoken
 npm i mongoose
 npm init -y if you want to deployment muss in Root Folder else in  Server folder
 .gitignore and .git muss be in Root Folder 
