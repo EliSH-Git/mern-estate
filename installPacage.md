@@ -28,16 +28,19 @@ npm init -y if you want to deployment muss in Root Folder else in  Server folder
 npm create vite@latest client => react-router && javascript  or npm i
 tailwind vite
 npm install -D tailwindcss postcss autoprefixer
+
 npm install @reduxjs/toolkit react-redux
 npm i react-redux
 npm i @reduxjs/toolkit
-- npm i redux-persist
+npm i redux-persist
+
 - npm i react-dropzone
 - npm i dotenv
 - npm i formik
 - npm i yup
 npm i react-router-dom
 npm i react-icons
+
 - npm i @mui/material
 - npm i @emotion/react
 - npm i @emotion/styled

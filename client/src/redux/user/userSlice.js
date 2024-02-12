@@ -7,24 +7,29 @@ const initialState = {
 };
 
 const userSlice = createSlice({
-    name: "user",
-    initialState,
-    reducers: {
-        signInStart: (state) => {
-            state.loading = true;
-        },
+    name: 'user',
+  initialState,
+  reducers: {
+    signInStart: (state) => {
+      state.loading = true;
+    },
+        // signInSuccess: (state, action) => {
+        //     return {
+        //         ...state,
+        //         currentUser: action.payload,
+        //         error: null,
+        //         loading: false,
+        //     };
+        // },
         signInSuccess: (state, action) => {
-            return {
-                ...state,
-                currentUser: action.payload,
-                error: null,
-                loading: false,
-            };
-        },
-        signInFailure: (state, action) => {
+            state.currentUser = action.payload;
+            state.loading = false;
+            state.error = null;
+          },
+          signInFailure: (state, action) => {
             state.error = action.payload;
             state.loading = false;
-        },
+          },
         //     state.action = action.payload; // payload is the data we receive from the server
         //     state.loading = false;
         //     state.error = null;
