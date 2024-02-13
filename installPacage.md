@@ -34,6 +34,8 @@ npm i react-redux
 npm i @reduxjs/toolkit
 npm i redux-persist
 
+npm install firebase
+
 - npm i react-dropzone
 - npm i dotenv
 - npm i formik
